@@ -1,0 +1,495 @@
+
+Interactive Whiteboard Answers
+
+
+
+1.1
+Responsive design, iconography, and performance optimisation are three web design techniques for hand-held
+devices. Responsive design means the design doesn't just work on a mobile device, it changes to make the
+site continue to look good despite the screen size. Iconography helps with responsive design in shrinking
+buttons using icons so that the text on the button does not need to be big. Performance optimisation is
+about making sure that a small (usually not powerful device) can still handle the webpage without slowing
+down or heating up too much.
+
+
+1.2
+iphone, tablet, laptop
+
+
+1.3
+XML and JSON can be used in mobile applications to exchange data over the network without completely
+reloading the page, or in native applications to retrieve data from a central server.
+
+
+1.4
+Two SDLCs that are relevant to medium and large projects are the waterfall and the agile methods of developing software.
+The waterfall method carries the idea of fully completing one stage of the development before moving on to the next
+one, for example designing the code for everything before ever writing any of it. The agile method is about being able
+to quickly jump from one part of the process to another, designing the structure of the database while writing the
+code to test the business logic. These are applied as ways of managing the workload and flow of projects.
+
+1.5
+done
+
+1.6
+An array is a collection of elements with a fixed size, where all of the elements are (generally) the same type.
+A list is an array which can be resized when adding or removing items
+A linked list is similar to an array or a list that doesn't need a continuous block of memory to store values,
+instead it stores the value and a pointer to the next value so that the items can be dispersed throughout memory
+but still accessed in order
+A stack is a first in last out ordering of items similar to a stack of plates - you can put another one on the top,
+but that one has to be the first to be removed before any others can be removed
+A queue is a first in first out ordering of items similar to a queue for a ride at lunar park - the first person to
+show up and join the queue will be first to go on the ride, and subsequent people to show up will ride in the same
+order they joined the queue
+A tree is a linked list, except each item can have more than one child element
+A graph is a tree with no defined root - each item can point to any number of other items, which may or may not
+have pointers returning to the first item
+A set is a list which does not allow duplicate items
+A hash table is a fancy way of taking something that is not an integer index accessor and turning it into one,
+meaning 2 sets of data can be linked in a one to one fashion
+
+1.7
+1. Ensure style guides are followed - helps with code readability, linting, and maintainance
+2. Have test cases to cover as much as possible - helps with demonstrating what is working and reducing regressions
+3. Create documentation for everything - helps with maintainance
+
+
+1.8
+1. Consider the function requirements and how well this library applies to them
+2. Verify what licence the library is under, and what that means for your code
+3. Verify the library is still being maintained with security updates and other support
+4. Consider how easy it would be to get someone new in who knows this library (if the previous person left)
+5. If the library is not open for your use case, consider the price for use in a condition that is better for you
+6. Consider other non-functional requirements such as performance
+
+
+
+1.9
+printing values or throwing exceptions with values in the message portion to the console to show what
+they are at particular stages in the program, and the debugger that is built into certain programs,
+such as the js debugger in most browsers
+
+remote debugging, node debugger
+
+
+1.10
+1. Reproduce the issue by setting up the same circumstances which caused it in the first place
+2. Locate the bug by analysing the code to narrow it down
+3. Identify the root cause by examining the logic and flow of the code
+4. Fix the bug by making changes and testing the code
+5. Test the fix - if it didn't work, return to step 2
+6. Mark issue as fixed
+
+1.11
+Keeping code maintainable can be done in a number of ways, but removing unused files, adding a date for
+when things were last updated (to functions, classes, etc), and carefully tracking issues speed up
+maintainence significantly. Removing unused files speeds up maintainence by making it easier for a
+developer to sort through everything and making the project folder cleaner. Tracking issues makes
+maintenance easier because the maintainer does not need to keep a lot of information in their head
+about everything, and instead can write it down in an organised way. Maintenance is also made easier
+if everything has a date for when it was last edited - this makes it easy to know if something is
+part of legacy code or heavily involved in the progression and development of the application.
+
+
+1.12
+Postman and curl are two REST API clients which may be suitable for testing this project. Both
+provide the required suite of tools to make HTTP requests, but curl is a pre-installed tool in
+most systems, while postman requires installation in VScode, which makes curl easier in terms of
+setup. However, Postman has a GUI, which makes it more user friendly. Between the two, curl's
+cli interactions are not unintuitive, and it's pre-installation makes it more suitable for use
+in this project.
+
+1.13
+JsDoc and Swagger are both extensive open source documentation tools for code, with swagger being
+specifically geared toward rest APIs, compared to jsdoc which is more generalist. However, swagger
+is a paid tool (although it has a free version), and jsdoc is licenced under the apache 2.0
+licence meaning it is free to use (under a few non-restrictive terms).
+
+1.14
+The four main names for api methods are Create, Read, Update, and Delete, while a common fifth method
+is a secondary update method, similar to HTTP's PATCH or PUT methods, or a Status method which would
+return information about the system's internal state or readiness. The five methods provide all the
+necessary functionality to interact with data through an api.
+
+1.15
+HTTP uses a request/response style, and every request has a method, route, and version which define
+which resource the client is requesting. A request frequently has headers and sometimes has a body,
+while a response has a version, status code, reason phrase, headers, and a body. HTTP is mostly used
+for distributed, collaborative hypermedia information systems - usually hypertext documents such as
+those that use HTML.
+
+1.16
+A request has structure:
+```
+<Method> <Route> <Version>
+<Header Key>: <Header Value>
+<Header Key>: <Header Value>
+...
+
+<Body>
+```
+
+While a response has structure
+```
+<Version> <Status code> <Reason phrase>
+<Header Key>: <Header Value>
+<Header Key>: <Header Value>
+...
+
+<Body>
+```
+
+HTTP methods include GET, POST, PUT, PATCH, DELETE, and OPTIONS. Routes look like file paths from
+a root directory "/". To request top level javascript content, the route would probably be
+"/scripts.js", compared to a subpage in the Products page: "/Products/Teapots". The version is
+almost always "HTTP/1.1" for both request and response. Headers provide more information about the
+body, for example "Content-Type: application/json". A request does not always have a body, whereas
+a response always has a body unless the 204 No Content response code is sent.
+
+
+1.17
+done
+
+1.18
+enabling data from other places (Cross Origin Resource Sharing)
+done
+
+
+part 2:
+
+2.1
+The project must produce a product which must allow drawing inputs, as well as it must be:
+. Collaborative
+. Responsive (screen responsive and fast on the backend)
+. Easy to get started
+. Easy to share a link to a session
+. Endless (have infinite scrolling)
+
+2.2
+The system will be made in Typescript - the frontend will be compiled from React Typescript
+into HTML/JS, and the backend natively supports Typescript.
+
+2.3
+The vast majority of the mobile devices that will be used by the client to interact with this project
+will have a touchscreen, will have multitouch and gesture features, and most of them will also be
+small, meaning features need to adjust in size to not be inaccessible, but also not take up the
+entire screen.
+
+2.4
+The mobile devices that will interact with this project will have to have all the basic features
+of an ICT device such as a screen, ram, cpu, and network connection, as well as a browser to access
+the web page of the project.
+
+2.5
+done
+
+2.6
+/create, /join, /findroom
+
+This project uses a combination of three sets of network endpoints, where one set is the websockets,
+another is handled entirely by vite, and the last one which was custom developed for this application.
+The HTTP endpoints developed for this application are "/create", "/join", and "/findroom". The
+"/create" endpoint creates a new room on GET and assigns it a websocket server. "/join" expects the
+body of the POST request to have a roomcode attached to it, and checks if that roomcode exists. If it
+does, it returns code 200 and a json object containing the information of the room. The "/findroom"
+endpoint is what verifies a room exists before the "/join" endpoint is called - it expects a
+roomcode in the body of the POST request, and returns a boolean and appropriate 200 or 404 status
+code based on whether a room exists or not.
+
+2.7
+The REST API framework that will be used for this project is express. It's availability within the
+npm library, it's minimal boilerplate code, and common usage in the industry show that it is one of
+the best available.
+
+2.8
+not recording user data, TLS (/HTTPS), justify (risk analysis) of system misuse, predictable IDs
+
+The application has a few built-in security measures, and adding onto those by using TLS over HTTP
+would definitely increase the security, but the system does not handle sensitive user data - it
+does not have a login/account system, and rooms are not password protected, so security on the
+client side is not particularly a priority. The only real flaw in the security is how
+predictable the current room IDs are (they count up starting from 1), however this is something
+which can be fixed fairly quickly.
+
+2.9
+[ss: 2.9 - UI design 1.jpg]
+[ss: 2.9 - UI design 2.jpg]
+[ss: 2.9 - UI design 3.jpg]
+
+2.10
+line segment system and how its communicated over the network, the infinite canvas thing
+
+sequenceDiagram
+    participant ViteServer
+    participant WsServer
+    participant Host
+    participant Participants
+    Host->>+ViteServer: Webpage request
+    ViteServer->>-Host: Host Page
+
+    Host->>+WsServer: Open room request
+    WsServer-)Host: Room has been opened
+
+    Participants->>+ViteServer: Webpage request
+    ViteServer->>-Participants: Participation page
+
+    Participants->>+WsServer: Join room
+
+    Participants-)WsServer: New strokes
+    WsServer-)Participants: Strokes drawn by others
+    Host-)WsServer: New strokes
+    WsServer-)Host: Strokes drawn by others
+
+    WsServer->>-Participants: Leave room
+
+    Host-)WsServer: Close room request
+    WsServer->>-Host: Room has been closed
+
+
+[ss: 2.10 - app home screen.jpg]
+[ss: 2.9 - UI design 3.jpg]
+[ss: 2.10 - vite ws host participant sequence diagram]
+[ss: 2.10 - main screen on mobile]
+[ss: 2.10 - main screen on desktop]
+
+2.11
+The project aims to be lightweight and usable, even on older devices and devices with lower output
+capabilities. The front end uses `useRef` from react to help with performance, and none of the
+mobile devices that the application was tested on did not heat up during testing, indicating
+lower battery usage compared to a more hardware intensive application.
+
+2.12
+github issues for test cases
+test cases for typical scenarios
+
+Manual UI tests:
+. draw a line on the canvas
+. create a room using the host link
+. join a room using the participate link
+. draw a line and see if it appears on another host
+. shift the canvas around to check local and remote originating lines move correctly
+Integration tests:
+. test adding a record to the strokes collection in the database
+. test each http endpoint for the correct status code and return information
+Non-functional tests:
+. test drawing loads of lines on a canvas and checking the system resource usage for abnormalities
+
+
+2.13
+document what has been discussed before, and how we're going to tackle these things
+
+----------------- begin email -----------------
+Hi [Supervisor],
+
+The application is in a stable, usable state, but is missing major test coverage and styling. As
+I said, it works and can be deployed, but requires more work. I also realise the room IDs are
+predictable and easy to guess, but that should be a fairly quick fix.
+
+I've attached the app development report below.
+
+
+Thanks,
+Dan :)
+
+27.11.25
+-----------------  end email  -----------------
+
+
+
+part 3:
+
+3.1
+[ss: install node]
+[ss: install vite]
+[ss: install vitest]
+[ss: install express and ws]
+Subjectively, the IDE could be any text editor, and is therefore not a necessary development tool.
+
+3.2
+[ss: use of ide to manage files]
+
+3.3
+[ss: use of automation facilities (vite build)]
+
+3.4
+[ss: 3.4 - drawStroke in useLayoutEffect]
+[ss: 3.4 - update canvas by websocket event]
+
+3.5
+[ss: 3.5 - before interaction.jpg]
+[ss: 3.5 - after tap.jpg]
+[ss: 3.5 - after horizontal swipe.jpg]
+[ss: 3.5 - after vertical swipe.jpg]
+
+3.6
+The auto resizing of the canvas when the device window changes size/shape works automatically through
+react, but it doesn't work immediately - it requires the user to interact with it somehow before it
+updates.
+
+3.7
+[ss: 3.7 - uses of objects 1.png]
+[ss: 3.7 - uses of objects 2.png]
+[ss: 3.7 - uses of objects 3.png]
+
+3.8
+Pretty much everything in this application is designed and custom written for it, or is part of a third
+party library, however everything is broken into individual pieces/modules as much as possible to reduce
+coupling and repeated code.
+[ss: 3.8 - modules in the programming]
+
+3.9
+[ss: 3.9 - async operation]
+
+3.10
+[ss: 3.10 - third party library imports]
+The app makes liberal use of third party libraries, but the main few are express, mongodb, and react.
+
+3.11
+The room code generator is not necessarily a hashing function, but it does produce a uniformly
+distributed output which is somewhat random
+[ss: 3.11 - room code generator]
+
+3.12
+change stroke history array into circular buffer
+
+The system works by storing lines in an array in memory, which works, but after a few people have
+drawn a few long lines, can become a serious performance issue.
+
+[ss: 3.12 - db room is removed upon room closing]
+
+3.13
+There are a number of these, but the LineSegment type is an object which contains nullable Point
+objects, which are each an array of numbers with length 2.
+[ss: 3.14 - coordinates 2d ds]
+
+3.14
+Every coordinate space in the application is an array of length 2. These values are used to track the
+difference between where the global (0, 0) is, and where the client is (measured by where the top left
+corner is as an origin for on-screen coordinates)
+[ss: 3.14 - coordinates 2d ds]
+
+3.15 application doesn't use any currently...
+
+A good optimisation (or intentional limitation) for the app would be to make the array that stores
+all the strokes into a circular buffer so that strokes start to drop off once more than a certain
+capacity has been reached.
+
+
+3.16
+Searching and sorting the application is achieved through filtering line segments based on whether
+they're visible on-screen or not. Due to the infinite canvas feature, line segments are frequently
+not all on-screen, and therefore do not need to be drawn. However, this filtering does not require
+efficient sorting or searching, as every line segment has to be drawn or checked anyway.
+
+3.17
+The data used in the application does not require sorting or searching, as it becomes sorted on definition.
+As the data is created, it is sorted by "time of creation", which is the line segments as the stroke is
+drawn. Searching is not necessary as data is grouped as it's created and individual data points are never
+isolated. While drawing a single line segment is required fairly often, it's only drawn after the line segment
+that was created directly before it and before the line segment that was created directly after it.
+
+3.18 the HTTP methods provide information about whether rooms exist or not
+[ss: 3.20 - protoserver implements POST method]
+
+3.19
+Updates between connected clients and server/client is done through websockets, and triggered by the
+handlePointerUp function in the Canvas 
+[ss: 3.19 - handlePointerUp canvas tsx]
+
+3.20
+The application does not implement PUT, PATCH, or DELETE methods, as updates and deletes of things are
+either done using POST requests, or handled through websockets.
+[ss: 3.20 - protoserver implements POST method]
+
+3.21
+[ss: 3.21 - use of HTTP codes]
+
+3.22
+The application does not implement the OPTIONS HTTP method, but does allow CORS, as the Vite server handles
+serving the webpages, while protoserver.ts handles using HTTP GET and POST requests to verify and connect
+clients to rooms.
+
+3.23
+The application does not necessarily store valuable information - importantly, it doesn't have a login system,
+meaning there is no chance any user accounts could be compromised (since there are none).
+
+3.24
+[ss: 3.24 - use of mobile client to save current view]
+
+3.25
+Strokes stored in object form in memory locally. The storage is of the form
+{ strokeDisplacement: [number, number], strokeColour: string, strokeWidth: number, segments: Array<LineSegment> }
+(key-value pairs)
+
+3.26
+[ss: 3.26 - browser debugging]
+
+3.27
+[ss: 3.27 - as close to IDE debugging as ill get]
+
+3.28
+Several times I've assumed TS is like python, and doesn't require a variable declaration before it's
+used, and fixed it by adding `let ` to the start of the line.
+[ss: 3.28 - syntactic error after]
+
+The logical error hasn't got a good before image, because there wasn't a commit between having the
+error and fixing it. The error was about trying to convert local canvas coordinates to global
+coordinates so that strokes could be stored relative to each other in a global scope
+[ss: 3.28 - logical error after]
+
+The design error was deciding to use raw html rather than react
+[ss: 3.28 - design error before]
+[ss: 3.28 - design error after]
+
+3.29
+[ss: 3.29 - optimisation 1 - remove method bc useless]
+[ss: 3.29 - optimisation 2 - deleted these files to make maintenance easier]
+[ss: 3.29 - optimisation 3 - recieved offscreen strokes are not drawn]
+
+3.30
+[ss: 3.30 - jsdoc comment]
+
+3.31
+[ss: 3.31 - multiple jsdoc comments]
+
+
+part 4: testing and stuff
+
+4.1
+[ss: use of an appropriate emulator]
+
+4.2
+[ss: 4.2 - deployment 1]
+[ss: 4.2 - deployment 2]
+
+4.3
+HTTP integration tests, positive and negative responses
+
+4.4
+
+
+
+part 5:
+
+5.1
+[ss: deploy app to mobile]
+
+5.2
+https://capacitorjs.com/docs/web/progressive-web-apps
+turns web page into an app
+
+capacitor, build script, apk
+
+
+
+
+
+
+
+
+
+
+
+
+
