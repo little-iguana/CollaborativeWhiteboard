@@ -1,0 +1,25 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:browser": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/supertest": "^6.0.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "@vitest/browser-playwright": "^4.0.14",
+    "supertest": "^7.1.4",
+    "vitest": "^4.0.14",
+    "vitest-browser-react": "^2.0.2"
+  },
+  "dependencies": {
+    "mongodb": "^7.0.0"
+  }
+}
